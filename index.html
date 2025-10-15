@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnWest Logistics — Moving Goods, Smoothly and Safely.</title>
+  <!-- <link rel="icon" type="image/x-icon" href="android-chrome-192x192.png"> -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="brand">
+            <div class="logo"><img style="width: 4rem;" src="https://i.postimg.cc/WzhB4Ck5/Wardiere-Inc.png"
+                    alt="On West Logistic Logo"></div>
+            <div class="center">
+                <h1>On West Logistics</h1>
+                <p class="muted ">Moving Goods — Smoothly and Safely.</p>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="#">Services</a>
+            <a href="#quote">Quote</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:12px">
+            <div class="contact-pill">Call Anytime <strong style="margin-left:6px">+1 92 666 888 0000</strong></div>
+            <button id="menuBtn">☰</button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeBtn">✕</button>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="#">Services</a>
+        <a href="#quote">Quote</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="info-block">
+                <div class="red-card" id="redCard">
+                    <div>
+                        <div class="clock">24</div>
+                        <small>Hours Service</small>
+                    </div>
+                    <div>
+                        <img style="width: 3rem; margin-left: 0.5rem;"
+                            src="https://i.postimg.cc/9Qbt0MY1/wall-clock.png" alt="On West Logistic Service 24 X 7">
+                    </div>
+                </div>
+                <h2 class="headline" id="headline"><span class="redWhite"> Experience the Best </span> Logistic &amp;
+                    Transport</h2>
+                <div class="sub">Reliable freight forwarding, last-mile delivery and warehousing — tailored for
+                    businesses who want punctuality and peace of mind.</div>
+                <div class="cta-row">
+                    <button class="btn" id="primaryBtn">Know More</button>
+                    <a href="#quote"> <button class="btn secondary" id="primaryBtn">Request Quote</button></a>
+                </div>
+            </div>
+            <div class="visual" id="visual">
+                <!-- <div class="frame" id="frame"> </div>
+                <div class="plane">✈️</div> -->
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+
+            <p class="small-title">On West Logistics</p>
+            <h2 class="section-title"> “Moving Goods — Smoothly and Safely.”</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="label">Freight</div>
+                    <img src="img/truck.jpg" alt="Freight Shipping Solutions">
+                    <div class="info">
+                        <div class="icon"><img style="width: 3rem;"
+                                src="https://i.postimg.cc/Gt8jN9qn/truck-svgrepo-com.png"></div>
+                        <h3>Freight Shipping Solutions</h3>
+                        <p>Dependable and nationwide freight services for every kind of shipment.</p>
+                        <a class="opacityDown" href="#">READ MORE →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="label">Warehousing</div>
+                    <img src="img/warehouse.jpg" alt="Ocean Freight">
+                    <div class="info">
+                        <div class="icon"><img style="width: 3rem;"
+                                src="https://i.postimg.cc/2ybPwkWm/warehouse-svgrepo-com.png"></div>
+                        <h3>Warehousing and Distribution</h3>
+                        <p>Efficient storage and inventory solutions, ensuring smooth distribution.</p>
+                        <a class="opacityDown" href="#">READ MORE →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="label">Delivery</div>
+                    <img src="img/girlwithboxes.jpg" alt="Airplane Freight">
+                    <div class="info">
+                        <div class="icon"><img style="width: 3rem;"
+                                src="https://i.postimg.cc/3wDh1ZQc/delivery-svgrepo-com.png"></div>
+                        <h3>Last-Mile Delivery</h3>
+                        <p>Fast and reliable deliveries to ensure customer satisfaction.</p>
+                        <a class="opacityDown" href="#">READ MORE →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="daycare-section" id="about">
+        <div class="containerr">
+            <!-- Left Content -->
+            <div class="content-left">
+                <span class="tagline">Reliable Logistics Solutions Across the Country</span>
+                <h2 class="title">On West Logistics: Your Trusted Partner for Seamless Deliveries</h2>
+                <p class="description">
+                    We provide efficient, safe, and on-time logistics services. From local deliveries to cross-country
+                    freight, we ensure your goods reach their destination with care.
+                </p>
+
+                <ul class="features">
+                    <li>
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.485 1.929l-7.07 7.071-3.536-3.536L1.93 7.414l4.485 4.485 8.485-8.485z" />
+                        </svg>
+                        <strong>Nationwide Coverage</strong>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.485 1.929l-7.07 7.071-3.536-3.536L1.93 7.414l4.485 4.485 8.485-8.485z" />
+                        </svg>
+                        <strong>On-Time Deliveries Guaranteed</strong>
+                    </li>
+                </ul>
+
+                <a href="#quote"><button class="btn mg-20-sm">Request Quote</button></a>
+
+
+
+
+            </div>
+
+            <!-- Right Content -->
+            <div class="content-right">
+                <div class="images">
+                    <img src="img/menwithtruck.jpg"
+                        alt="Classroom" class="img small img1" />
+
+                    <img src="img/girlwithredjackeet.jpg"
+                        alt="Crafts" class="img small img2" />
+
+                    <img src="https://i.postimg.cc/FHJFxYfW/2151541923.jpg"
+                        alt="Teacher and kids" class="img large img3" />
+
+                    <div class="experience-badge">
+                        <span class="numberr">17+</span><br />
+                        <span class="text">Years<br>of Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="accomplishments" id="accomplishments">
+        <div class="tagline">ACCOMPLISHMENTS</div>
+        <h2>Let the numbers speak for <br><span>themselves.</span></h2>
+        <div class="stats">
+            <!-- Box 1 -->
+            <div class="stat-box">
+                <img src="img/red truck.jpg" alt="Delivered packages" />
+                <div class="number" data-target="5731">0</div><span class="plus">+</span>
+                <h3>Delivered packages.</h3>
+                <p>We strongly support best practice sharing across our operations around the world and across various
+                    industrial sectors.</p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="stat-box">
+                <img src="img/austruckwithmap.jpg" alt="Distance in Australia" />
+                <div class="number" data-target="439000">0</div><span class="plus">+</span>
+                <h3>Kilometers Distance covered.</h3>
+                <p>We're proud of our extensive reach, covering thousands of kilometers across Australia.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="stat-box">
+                <img src="img/twomencarryingload.jpg" alt="Tons of goods" />
+                <div class="number" data-target="476">0</div><span class="plus">+</span>
+                <h3>Tons of goods.</h3>
+                <p>Our commitment to sustainability helps us reduce waste and share the benefits with our customers.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Request a Quote Section -->
+    <div class="flex" id="quote">
+        <div class="hideit"><img class="fleximg" src="img/girlWithThumsup.jpg"
+                alt="Request Quote to ONWEST Logistics">
+        </div>
+
+
+
+        <div>
+            <form id="bookingForm" action="https://formsubmit.co/your-email@example.com" method="POST" >
+                <h2>Get A Quote </h2>
+
+                <!-- Name and Email -->
+                <div class="form-row">
+                    <div>
+                        <label for="nameInput">Full Name*</label>
+                        <input type="text" id="nameInput" name="name" placeholder="Your full name" required />
+                        <div class="error-message" id="nameError">Please enter your name</div>
+                    </div>
+                    <div>
+                        <label for="emailInput">Email*</label>
+                        <input type="email" id="emailInput" name="email" placeholder="you@example.com" required />
+                        <div class="error-message" id="emailError">Please enter a valid email</div>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-row">
+                    <div style="grid-column: 1 / -1;">
+                        <label for="phoneInput">Phone Number*</label>
+                        <input type="tel" id="phoneInput" name="phone" placeholder="+61 4XX XXX XXX"
+                            pattern="^\+?[\d\s\-()]{8,}$" required />
+                        <div class="error-message" id="phoneError">Please enter a valid phone number</div>
+                    </div>
+                </div>
+
+                <!-- Origin City & Destination City -->
+                <div class="form-row">
+                    <div>
+                        <label for="originCityDropdown">Origin City*</label>
+                        <div class="custom-dropdown" id="originCityDropdown" tabindex="0" aria-haspopup="listbox"
+                            aria-expanded="false" aria-labelledby="originCityLabel" role="combobox"
+                            aria-controls="originCityList">
+                            <div class="custom-dropdown__selected">Select Origin City</div>
+                            <div class="custom-dropdown__arrow"></div>
+                            <ul class="custom-dropdown__list" id="originCityList" role="listbox" tabindex="-1"
+                                aria-activedescendant="">
+                                <li class="custom-dropdown__option" role="option" data-value="Sydney"
+                                    id="origin-city-1">Sydney
+                                </li>
+                                <li class="custom-dropdown__option" role="option" data-value="Melbourne"
+                                    id="origin-city-2">
+                                    Melbourne</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Brisbane"
+                                    id="origin-city-3">
+                                    Brisbane</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Perth" id="origin-city-4">
+                                    Perth
+                                </li>
+                                <li class="custom-dropdown__option" role="option" data-value="Adelaide"
+                                    id="origin-city-5">
+                                    Adelaide</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Canberra"
+                                    id="origin-city-6">
+                                    Canberra</li>
+                                <li class="custom-dropdown__option" role="option" data-value="custom"
+                                    id="origin-city-7">
+                                    <em>Other (Type Manually)</em>
+                                </li>
+                            </ul>
+                            <input type="hidden" name="origin_city" id="origin_city_input" required />
+                        </div>
+                        <div class="manual-input-container" id="originCityManual" style="display:none;">
+                            <input type="text" class="manual-input" name="custom_origin_city" id="customOriginInput"
+                                placeholder="Type your origin city" />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="destinationCityDropdown">Destination City*</label>
+                        <div class="custom-dropdown" id="destinationCityDropdown" tabindex="0" aria-haspopup="listbox"
+                            aria-expanded="false" aria-labelledby="destinationCityLabel" role="combobox"
+                            aria-controls="destinationCityList">
+                            <div class="custom-dropdown__selected">Select Destination City</div>
+                            <div class="custom-dropdown__arrow"></div>
+                            <ul class="custom-dropdown__list" id="destinationCityList" role="listbox" tabindex="-1"
+                                aria-activedescendant="">
+                                <li class="custom-dropdown__option" role="option" data-value="Sydney" id="dest-city-1">
+                                    Sydney
+                                </li>
+                                <li class="custom-dropdown__option" role="option" data-value="Melbourne"
+                                    id="dest-city-2">
+                                    Melbourne</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Brisbane"
+                                    id="dest-city-3">
+                                    Brisbane</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Perth" id="dest-city-4">
+                                    Perth</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Adelaide"
+                                    id="dest-city-5">
+                                    Adelaide</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Canberra"
+                                    id="dest-city-6">
+                                    Canberra</li>
+                                <li class="custom-dropdown__option" role="option" data-value="custom" id="dest-city-7">
+                                    <em>Other
+                                        (Type Manually)</em>
+                                </li>
+                            </ul>
+                            <input type="hidden" name="destination_city" id="destination_city_input" required />
+                        </div>
+                        <div class="manual-input-container" id="destinationCityManual" style="display:none;">
+                            <input type="text" class="manual-input" name="custom_destination_city"
+                                id="customDestinationInput" placeholder="Type your destination city" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Type & Fridge Type -->
+                <div class="form-row">
+                    <div>
+                        <label for="packageTypeDropdown">Package Type*</label>
+                        <div class="custom-dropdown" id="packageTypeDropdown" tabindex="0" aria-haspopup="listbox"
+                            aria-expanded="false" aria-labelledby="packageTypeLabel" role="combobox"
+                            aria-controls="packageTypeList">
+                            <div class="custom-dropdown__selected">Select Package Type</div>
+                            <div class="custom-dropdown__arrow"></div>
+                            <ul class="custom-dropdown__list" id="packageTypeList" role="listbox" tabindex="-1"
+                                aria-activedescendant="">
+                                <li class="custom-dropdown__option" role="option" data-value="Box" id="package-1">Box
+                                </li>
+                                <li class="custom-dropdown__option" role="option" data-value="Crate" id="package-2">
+                                    Crate</li>
+                                <li class="custom-dropdown__option" role="option" data-value="Envelope" id="package-3">
+                                    Envelope
+                                </li>
+                                <li class="custom-dropdown__option" role="option" data-value="Pallet" id="package-4">
+                                    Pallet</li>
+                            </ul>
+                            <input type="hidden" name="package_type" id="package_type_input" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div style="grid-column: 1 / -1;">
+                            <label for="QuantityorWeight">Quantity or Weight</label>
+                            <input type="text" id="QuantityorWeight" name="QuantityOrWeight"
+                                placeholder="789 pices / 4544kg" />
+                            <div class="error-message" id="phoneError">Please enter  letters</div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                <label for="fridgeTypeDropdown">Fridge Type*</label>
+                <div class="custom-dropdown" id="fridgeTypeDropdown" tabindex="0" aria-haspopup="listbox"
+                    aria-expanded="false" aria-labelledby="fridgeTypeLabel" role="combobox"
+                    aria-controls="fridgeTypeList">
+                    <div class="custom-dropdown__selected">Select Fridge Type</div>
+                    <div class="custom-dropdown__arrow"></div>
+                    <ul class="custom-dropdown__list" id="fridgeTypeList" role="listbox" tabindex="-1"
+                        aria-activedescendant="">
+                        <li class="custom-dropdown__option" role="option" data-value="Refrigerator" id="fridge-1">
+                            Refrigerator</li>
+                        <li class="custom-dropdown__option" role="option" data-value="Freezer" id="fridge-2">Freezer
+                        </li>
+                        <li class="custom-dropdown__option" role="option" data-value="Mini Fridge" id="fridge-3">Mini
+                            Fridge</li>
+                        <li class="custom-dropdown__option" role="option" data-value="Wine Cooler" id="fridge-4">Wine
+                            Cooler</li>
+                    </ul>
+                    <input type="hidden" name="fridge_type" id="fridge_type_input" required />
+                </div>
+            </div> -->
+                </div>
+
+                <!-- Shipping Type -->
+                <!-- <div class="form-row">
+            <div style="grid-column: 1 / -1;">
+                <label for="shippingTypeDropdown">Shipping Type*</label>
+                <div class="custom-dropdown" id="shippingTypeDropdown" tabindex="0" aria-haspopup="listbox"
+                    aria-expanded="false" aria-labelledby="shippingTypeLabel" role="combobox"
+                    aria-controls="shippingTypeList">
+                    <div class="custom-dropdown__selected">Select Shipping Type</div>
+                    <div class="custom-dropdown__arrow"></div>
+                    <ul class="custom-dropdown__list" id="shippingTypeList" role="listbox" tabindex="-1"
+                        aria-activedescendant="">
+                        <li class="custom-dropdown__option" role="option" data-value="Standard" id="shipping-1">Standard
+                        </li>
+                        <li class="custom-dropdown__option" role="option" data-value="Express" id="shipping-2">Express
+                        </li>
+                        <li class="custom-dropdown__option" role="option" data-value="Overnight" id="shipping-3">
+                            Overnight</li>
+                        <li class="custom-dropdown__option" role="option" data-value="International" id="shipping-4">
+                            International</li>
+                    </ul>
+                    <input type="hidden" name="shipping_type" id="shipping_type_input" required />
+                </div>
+            </div>
+        </div> -->
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+
+
+
+
+
+
+
+    <!-- Shipment Control Section (drop into your page) -->
+    <section id="shipmentControlSection" class="sws-section" aria-labelledby="sws-title">
+        <div class="sws-container">
+            <!-- Left visual column -->
+            <div class="sws-visual-col" role="img" aria-label="Warehouse and container image">
+                <img class="sws-large-img"
+                    src="img/twomenshakinghands.jpg"
+                    alt="Warehouse interior - placeholder" loading="lazy">
+                <div class="sws-thumb-wrap" aria-hidden="true">
+                    <img class="sws-thumb-img"
+                        src="img/girlopening truck.jpg"
+                        alt="Container & worker - placeholder" loading="lazy">
+                    <button class="sws-play-btn" id="swsPlayBtn" aria-label="Play overview video">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M8 5v14l11-7z" fill="#fff"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right content column -->
+
+
+
+
+            <!-- ====== FAQ DIV (Place anywhere on your page) ====== -->
+            <div class="sws-faq-wrapper">
+                <h2 class="sws-faq-title">Frequently Asked Questions</h2>
+
+                <div class="sws-faq-item">
+                    <div class="sws-faq-question">
+                        <span>How can I book a shipment With OnWest Logistics?</span>
+                        <span class="sws-faq-icon">+</span>
+                    </div>
+                    <div class="sws-faq-answer">
+                        Booking a shipment with OnWest Logistics is quick and simple. Just fill out our online booking
+                        form with your pickup and delivery details, along with your package information. Once submitted,
+                        our expert logistics team will handle the rest. We offer seamless freight solutions for
+                        businesses and individuals across Australia.
+
+                    </div>
+                </div>
+
+                <div class="sws-faq-item">
+                    <div class="sws-faq-question">
+                        <span>What types of goods OnWest Logistics transport in Australia?</span>
+                        <span class="sws-faq-icon">+</span>
+                    </div>
+                    <div class="sws-faq-answer">
+                        At OnWest Logistics, we transport a wide range of goods, including general freight, refrigerated
+                        items, oversized cargo, hazardous materials, and more. Whether you need to ship locally within
+                        Australian cities or across the country, we offer reliable transportation for all types of
+                        shipments.
+
+                    </div>
+                </div>
+
+                <div class="sws-faq-item">
+                    <div class="sws-faq-question">
+                        <span>Can I track my shipment in real-time?</span>
+                        <span class="sws-faq-icon">+</span>
+                    </div>
+                    <div class="sws-faq-answer">
+                        Yes! With OnWest Logistics, you can track your shipment in real-time. Our advanced tracking
+                        system allows you to follow your freight’s journey from pickup to delivery, giving you full
+                        visibility and peace of mind throughout the process.
+                    </div>
+                </div>
+
+                <div class="sws-faq-item">
+                    <div class="sws-faq-question">
+                        <span>Does OnWest Logistics offer insurance coverage?</span>
+                        <span class="sws-faq-icon">+</span>
+                    </div>
+                    <div class="sws-faq-answer">
+                        Yes, we offer optional insurance coverage for your shipments. Our insurance options are designed
+                        to protect your goods from potential damage or loss while in transit, giving you added security
+                        and peace of mind during the shipping process.
+                    </div>
+                </div>
+
+                <div class="sws-faq-item">
+                    <div class="sws-faq-question">
+                        <span>How fast can I get a quote from OnWest Logistics?</span>
+                        <span class="sws-faq-icon">+</span>
+                    </div>
+                    <div class="sws-faq-answer">
+                        You can get an instant shipping quote from OnWest Logistics within seconds. Our smart quote
+                        system provides fast and accurate estimates, so you can quickly determine the cost of your
+                        shipment. Simply enter your shipment details, and you’ll receive your quote immediately.
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- <div class="sws-content-col">
+      <p class="sws-kicker">// WHO WE ARE</p>
+      <h2 id="sws-title" class="sws-title">We give you complete control on shipments.</h2>
+
+      <div class="sws-stats-and-copy">
+        <div class="sws-stats" aria-hidden="true">
+          <span class="sws-stats-number">25<span class="sws-plus">+ </span> <span class="sws-stats-label-one" >Years Of Experience</span> </span>   -->
+            <!-- <div class="sws-stats-label">Years Of Experience</div> -->
+            <!-- </div> -->
+
+            <!-- <div class="sws-copy">
+          <p class="sws-copy-text">We strongly support best practices across our operations around the world and across various industrial sectors. Our systems provide visibility so you can make smarter logistics decisions.</p>
+        </div> -->
+            <!-- </div> -->
+
+            <!-- <hr class="sws-divider">
+
+      <div class="sws-footer">
+        <div class="sws-person">
+          <img src="https://i.postimg.cc/KYM08QMK/image.jpg" alt="Mita Walker" class="sws-person-photo" loading="lazy">
+          <div>
+            <div class="sws-person-name">Harnoor Singh</div>
+            <div class="sws-person-role">CEO, Transpress</div>
+          </div>
+        </div>
+
+        <ul class="sws-features" aria-hidden="true">
+          <li> <img style="width: 1rem;" src="https://i.postimg.cc/qvB0PhW4/tick-circle-svgrepo-com.png" alt="On West Logistics Austrlia CEO Qualities 1 "> Solving complex problems</li>
+          <li><img style="width: 1rem;" src="https://i.postimg.cc/qvB0PhW4/tick-circle-svgrepo-com.png" alt="On West Logistics Austrlia CEO Qualities 2 "> We guarantee trusted</li>
+          <li><img style="width: 1rem;" src="https://i.postimg.cc/qvB0PhW4/tick-circle-svgrepo-com.png" alt="On West Logistics Austrlia CEO Qualities 3"> Experts in technology</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+            <!-- YouTube Modal -->
+            <div class="sws-modal" id="swsModal" role="dialog" aria-modal="true" aria-hidden="true"
+                aria-labelledby="swsModalTitle">
+                <div class="sws-modal-backdrop" id="swsModalBackdrop"></div>
+                <div class="sws-modal-panel" role="document">
+                    <button class="sws-modal-close" id="swsModalClose" aria-label="Close video">✕</button>
+                    <div class="sws-video-wrap" id="swsVideoWrap" aria-live="polite">
+                        <!-- iframe injected by JS -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- ===== Testimonials Section ===== -->
+    <section class="sws-testimonial-section">
+        <div class="sws-testimonial-container">
+            <h2 class="sws-testimonial-title">What Our Clients Say</h2>
+            <div class="sws-testimonial-grid">
+
+                <!-- Testimonial 1 -->
+                <div class="sws-testimonial-card">
+                    <div class="sws-testimonial-header">
+                        <img src="img/boytestimonial 2.jpg" alt="Client 1" class="sws-testimonial-img">
+                        <div>
+                            <h3 class="sws-testimonial-name">Michael Roberts</h3>
+                            <p class="sws-testimonial-role">Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="sws-testimonial-text">
+                        “On West Logistics has been an absolute game-changer for our deliveries.
+                        Their speed, professionalism, and transparency are unmatched!”
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="sws-testimonial-card">
+                    <div class="sws-testimonial-header">
+                        <img src="img/girltestimonnial.jpg" alt="Client 2" class="sws-testimonial-img">
+                        <div>
+                            <h3 class="sws-testimonial-name">Sarah Johnson</h3>
+                            <p class="sws-testimonial-role">Operations Manager</p>
+                        </div>
+                    </div>
+                    <p class="sws-testimonial-text">
+                        “I’ve never had such reliable service before.
+                        Their communication and tracking system make the process completely stress-free.”
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="sws-testimonial-card">
+                    <div class="sws-testimonial-header">
+                        <img src="img/boytestimonial.jpg" alt="Client 3" class="sws-testimonial-img">
+                        <div>
+                            <h3 class="sws-testimonial-name">David Thompson</h3>
+                            <p class="sws-testimonial-role">Fleet Supervisor</p>
+                        </div>
+                    </div>
+                    <p class="sws-testimonial-text">
+                        “They always deliver on time, no excuses.
+                        I highly recommend them for anyone looking for professional logistics support.”
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact-section" class="contact-section">
+  <div class="contact-container">
+    <!-- Left: Info + Map -->
+    <div class="contact-info">
+      <h2 class="contact-title">Get in Touch</h2>
+      <p class="contact-desc">
+        We'd love to hear from you! Whether you have a question about services, pricing, or anything else —
+        our team is ready to answer all your questions.
+      </p>
+
+      <div class="contact-details">
+        <p><strong>Address:</strong> 123 King Street, Melbourne, Australia</p>
+        <p><strong>Phone:</strong> +61 400 123 456</p>
+        <p><strong>Email:</strong> connect@onwestlogistics.com</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093174!2d144.95373531531698!3d-37.81627937975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f8a1ec5f0c!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1614035589921!5m2!1sen!2sau"
+          width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/sukhmeet@gh.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+          <input type="text" name="phone" placeholder="Phone Number">
+          <input type="text" name="subject" placeholder="Subject">
+        </div>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 🌍 On West Logistics Footer -->
+<footer class="sws-footer-section">
+  <div class="sws-footer-inner">
+    <div class="sws-footer-col">
+      <h3>On West Logistics</h3>
+      <p>Moving your world, on time — every mile, every shipment, every promise delivered with precision and care.</p>
+      <div class="sws-footer-socials">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <div class="sws-footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="sws-footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">Freight Forwarding</a></li>
+        <li><a href="#">Warehousing</a></li>
+        <li><a href="#">Cold Chain Logistics</a></li>
+        <li><a href="#">Express Delivery</a></li>
+      </ul>
+    </div>
+
+    <div class="sws-footer-col">
+      <h4>Contact Info</h4>
+      <p>📍 52 Industrial Way, Sydney, Australia</p>
+      <p style="color: white; text-decoration: none;">📞 +1 92 666 888 0000</p>
+      <p>✉️ support@onwestlogistics.com</p>
+    
+    </div>
+  </div>
+    <p style="text-align: center;">© 2025 On West Logistics. All Rights Reserved.</p>
+
+  <div class="sws-footer-bottom">
+    <h1 class="sws-footer-tagline">ON WEST LOGISTICS<span class="verySmall">©</span></h1>
+    
+  </div>
+</footer>
+
+
+
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
